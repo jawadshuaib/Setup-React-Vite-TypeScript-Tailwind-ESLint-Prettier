@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint", "import"],
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "import/no-extraneous-dependencies": 0
+    // add other custom rules here
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Adjust this based on your React version
+    }
+  }
+}
+
+// {
+//   "env": {
+//     "browser": true,
+//     "es2021": true
+//   },
+//   "parser": "@typescript-eslint/parser",
+//   "extends": [
+//     "airbnb/rules/react",
+//     "plugin:react/recommended",
+//     "plugin:import/recommended",
+//     "plugin:prettier/recommended",
+//     "eslint:recommended",
+//     "plugin:@typescript-eslint/recommended"
+//   ],
+
+//   "overrides": [],
+
+//   "parserOptions": {
+//     "ecmaVersion": "latest",
+//     "sourceType": "module"
+//   },
+
+//   "plugins": ["react", "prettier", "import"],
+
+//   "rules": {
+//     "react/react-in-jsx-scope": 0,
+//     "import/no-extraneous-dependencies": 0
+//   }
+// }
